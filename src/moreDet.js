@@ -20,6 +20,15 @@ class MoreDet extends React.Component {
   
     return (
       <div> 
+        <div>
+          {
+            this.state.isMore && (
+            <div>
+            <h5>{this.props.contact.login.username}, Age: {this.props.contact.dob.age} </h5>
+            <h5 class="text">{this.props.contact.email}</h5>
+            </div>
+            )}
+        </div>
         <button class= {moreStatus} onClick={ () => this.handleMore(this)}>{moreButton}</button>
       </div>
     )

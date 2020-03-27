@@ -46,15 +46,8 @@ class Rollodex extends React.Component {
                   <h3>{contact.name.first} {contact.name.last} </h3>
                   <div class="media">
                       <img src={contact.picture.large} alt="No img"/>
-                  </div>
-                  <div class="cardMain">
-                    <div>
-                        <h5>{contact.login.username}, Age: {contact.dob.age} </h5>
-                        <h5 class="text">{contact.email}</h5>
-                    </div>
-
-                    </div>
-                    < MoreDet contact={this.state.contacts}/>
+                  </div >
+                    < MoreDet contact={contact}/>
                 </div>
 
               )

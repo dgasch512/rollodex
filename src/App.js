@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Rollodex from './rollodex';
+import Rollodex from './rollodex'; 
 
 function App() {
   return (
